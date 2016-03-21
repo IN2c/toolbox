@@ -34,6 +34,6 @@ public class Umwandlung
 	{
 		// Autor: Janosh Björkman
 		double gb = wert/1024;
-		System.out.printf("%4.2f MB entsprechen %4.2f GB\n\n\n", wert, gb);
+		System.out.printf("\n%4.2f MB entsprechen %4.2f GB\n\n\n", wert, gb);
 	}
 }
