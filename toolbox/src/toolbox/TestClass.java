@@ -7,8 +7,10 @@ public class TestClass {
 
 		Umwandlung Umwandlung = new Umwandlung();
 		Umwandlung.CelsiusInFahrenheit(32);
-		
 		Umwandlung.CelsiusInFahrenheit(10);
+		
+		Umwandlung Waehrung = new Umwandlung();
+		Waehrung.EuroInFranken(12.0);
 		
 		Umwandlung mbtogb = new Umwandlung();
 		mbtogb.MBinGB(690);
