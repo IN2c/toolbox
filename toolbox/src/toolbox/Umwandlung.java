@@ -1,5 +1,9 @@
 package toolbox;
 
-public class Umwandlung {
-
+public class Umwandlung 
+{
+	public void EuroInFranken()
+	{
+		
+	}
 }
