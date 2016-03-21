@@ -17,5 +17,7 @@ public class TestClass {
 		
 		Umwandlung gbtomb = new Umwandlung();
 		gbtomb.GBinMB(125.3);
+		
+		AutopreisBerechnen auto = new AutopreisBerechnen(8000.0, 2, 333, 4000.0);
 	}
 }
