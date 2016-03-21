@@ -8,7 +8,7 @@ public class Umwandlung
 	{
 		double fahrenheit = 0;
 		fahrenheit = celsius * 1.8 + 32;
-		System.out.printf("%4.2f Grad Celsius entsprechen in Fahrenheit: %4.2f\n\n\n", celsius, fahrenheit);
+		System.out.printf("%4.2f °C = %4.2f °F\n\n\n", celsius, fahrenheit);
 	}
 	
 	public void FahrenheitInCelsius()
