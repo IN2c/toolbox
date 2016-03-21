@@ -1,9 +1,10 @@
 package toolbox;
 
 
-public class Umwandlung {
-	
-	public void CelsiusInFahrenheit(double celsius)  //Oliver
+
+public class Umwandlung 
+{
+	public void CelsiusInFahrenheit(double celsius)
 	{
 		double fahrenheit = 0;
 		fahrenheit = celsius * 1.8 + 32;
@@ -19,9 +20,14 @@ public class Umwandlung {
 		
 	}
 	
-	public void EuroInFranken()
+	public void EuroInFranken(double wert)
 	{
+		// Autor: Tobias Verstappen
+		double euro = 0.0;
+		double franken = 0.0;
 		
+		franken = wert / 0.9;
+		System.out.printf("%4.2f", franken);
 	}
 	public void MBinGB()
 	{
