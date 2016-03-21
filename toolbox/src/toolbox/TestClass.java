@@ -14,6 +14,8 @@ public class TestClass {
 		
 		Umwandlung mbtogb = new Umwandlung();
 		mbtogb.MBinGB(690);
-
+		
+		Umwandlung gbtomb = new Umwandlung();
+		gbtomb.GBinMB(125.3);
 	}
 }

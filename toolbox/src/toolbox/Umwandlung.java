@@ -18,8 +18,10 @@ public class Umwandlung
 		System.out.printf("%4.2f °F = %4.2f °C\n\n\n", fahrenheit, celsius);
 	}
 	
-	public void GBinMB(){
-		
+	public void GBinMB(double wert)
+	{
+		double mb = wert*1024;
+		System.out.printf("\n%4.2f GB entsprechen %4.2f MB\n\n\n", wert, mb);
 	}
 	
 	public void EuroInFranken(double wert)
