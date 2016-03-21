@@ -9,9 +9,9 @@ public class TestClass {
 		Umwandlung.CelsiusInFahrenheit(32);
 		
 		Umwandlung.CelsiusInFahrenheit(10);
-
-		Umwandlung test = new Umwandlung();
-		test.EuroInFranken(12.0);
+		
+		Umwandlung mbtogb = new Umwandlung();
+		mbtogb.MBinGB(690);
 
 	}
 }
