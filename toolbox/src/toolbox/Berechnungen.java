@@ -16,5 +16,10 @@ public class Berechnungen {
 	{
 		
 	}
+	
+	public void SinusCosinusTangens()
+	{
+		
+	}
 
 }
