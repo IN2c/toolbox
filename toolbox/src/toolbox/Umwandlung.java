@@ -29,8 +29,11 @@ public class Umwandlung
 		franken = wert / 0.9;
 		System.out.printf("%4.2f", franken);
 	}
-	public void MBinGB()
+	
+	public void MBinGB(double wert)
 	{
-		
+		// Autor: Janosh Björkman
+		double gb = wert/1024;
+		System.out.printf("%4.2f MB entsprechen %4.2f GB\n\n\n", wert, gb);
 	}
 }
