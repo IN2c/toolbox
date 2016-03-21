@@ -23,8 +23,16 @@ public class AutopreisBerechnen
 	
 	public void Berechnung()
 	{
-		preis = neupreis - (alter);
+		if(alter < 3)
+		{
+			preis = neupreis - (neupreis / 3);
+		}
+		else
+		{	
+			preis = neupreis - (neupreis / 3);
+			preis = preis - (neupreis / alter);
+		}
 		
-		System.out.println(preis);
+		System.out.printf("Der geschätze Autowert beträgt: %4.2f ", preis);
 	}
 }
