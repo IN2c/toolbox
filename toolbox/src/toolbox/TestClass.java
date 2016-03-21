@@ -17,5 +17,8 @@ public class TestClass {
 		
 		Umwandlung gbtomb = new Umwandlung();
 		gbtomb.GBinMB(125.3);
+		
+		Berechnungen zufallszahl1= new Berechnungen();
+		zufallszahl1.Zufallszahl(15000, 0);
 	}
 }
