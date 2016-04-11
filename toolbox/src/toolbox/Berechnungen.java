@@ -41,9 +41,12 @@ public class Berechnungen {
 			System.out.println("Die Gegenkathete ist: " + gegenkathete);
 		}
 		
-		public void phWert()
-		{
-			
+		public void phWert(double stoffmengenkonzentration) {
+			double phWert;
+			double stoff;
+			stoff = stoffmengenkonzentration;
+			phWert = -Math.log(stoff);
+			System.out.println(phWert);
 		}		
 	
 		public void SinusCosinusTangens(){

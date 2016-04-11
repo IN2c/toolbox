@@ -18,10 +18,13 @@ public class TestClass {
 		Umwandlung gbtomb = new Umwandlung();
 		gbtomb.GBinMB(125.3);
 		
-		AutopreisBerechnen auto = new AutopreisBerechnen(8000.0, 3, 333, 4000.0);
-		auto.Berechnung();
+		//AutopreisBerechnen auto = new AutopreisBerechnen(8000.0, 3, 333, 4000.0);
+		//auto.Berechnung();
 
 		Berechnungen zufallszahl1= new Berechnungen();
 		zufallszahl1.Zufallszahl(15000, 0);	
+		
+		Berechnungen phWert = new Berechnungen();
+		phWert.phWert(27.3);
 	}
 }
