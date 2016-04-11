@@ -1,5 +1,6 @@
 package toolbox;
 
+import java.lang.Math.*;
 import java.util.Random;
 
 public class Berechnungen {
@@ -48,18 +49,75 @@ public class Berechnungen {
 			phWert = -Math.log(stoff);
 			System.out.println(phWert);
 		}		
-	
-		public void SinusCosinusTangens(){
 		
-		}
-	
 		public void Zufallszahl(int max, int min)
 		{
 			// Autor: Janosh Björkman
-			
+
 			Random rand = new Random();
 			int randomNum = min + (int)(Math.random() * ((max - min) + 1));
 			System.out.println("Zufallszahl: "+randomNum);
 		}
+
+	public void SinusCosinusTangens(String SinCosTan, double AngleMeasure)
+	{
+		if (SinCosTan == "Sinus")
+		{
+			Sinus(AngleMeasure);
+		}
+		else if (SinCosTan == "Cosinus")
+		{
+			Cosinus(AngleMeasure);
+		}
+		else if (SinCosTan == "Tangens")
+		{
+			Tangens(AngleMeasure);
+		}
+		else if (SinCosTan == "arcSinus")
+		{
+			arcSinus(AngleMeasure);
+		}
+		else if (SinCosTan == "arcCosinus")
+		{
+			arcCosinus(AngleMeasure);
+		}
+		else if (SinCosTan == "arcTangens")
+		{
+			arcTangens(AngleMeasure);
+		}
+	}
+	
+	public void Sinus(double angle)
+	{
+		Math.sin(angle);
+	}
+	
+	public void Cosinus(double angle)
+	{
+		Math.cos(angle);
+	}
+	
+	public void Tangens(double angle)
+	{
+		Math.tan(angle);
+	}
+	
+	public void arcSinus(double Sinus)
+	{
+		Math.asin(Sinus);
+	}
+	
+	public void arcCosinus(double Cosinus)
+	{
+		Math.acos(Cosinus);
+	}
+	
+	public void arcTangens(double Tangens)
+	{
+		Math.atan(Tangens);
+	}
+
+
 }
+
 
