@@ -23,16 +23,32 @@ public class AutopreisBerechnen
 	
 	public void Berechnung()
 	{
-		if(alter < 3)
+		if(alter <= 3)
 		{
 			preis = neupreis - (neupreis / 3);
+			if(ps < 100)
+			{
+				preis -= 100;
+			}
+			else
+			{
+				preis -= 200;
+			}
 		}
 		else
 		{	
-			preis = neupreis - (neupreis / 3);
+			preis = neupreis - (neupreis / 4);
 			preis = preis - (neupreis / alter);
+			if(ps < 100)
+			{
+				preis -= 100;
+			}
+			else
+			{
+				preis -= 200;
+			}
 		}
 		
-		System.out.printf("Der geschätze Autowert beträgt: %4.2f \n", preis);
+		System.out.printf("\nDer geschätze Autowert beträgt: %4.2f Franken \n\n\n", preis);
 	}
 }
