@@ -46,40 +46,41 @@ public class Berechnungen {
 		{
 			
 		}		
-	
+		
+		public void Zufallszahl(int max, int min)
+		{
+			// Autor: Janosh Björkman
 
-	public void SinusCosinusTangens(String SinCosTan, String AngleMeasure)
+			Random rand = new Random();
+			int randomNum = min + (int)(Math.random() * ((max - min) + 1));
+			System.out.println("Zufallszahl: "+randomNum);
+		}
+
+	public void SinusCosinusTangens(String SinCosTan, double AngleMeasure)
 	{
 		if (SinCosTan == "Sinus")
 		{
-			
+			Sinus(AngleMeasure);
 		}
 		else if (SinCosTan == "Cosinus")
-
-		public void SinusCosinusTangens(){
-		
-		}
-	
-		public void Zufallszahl(int max, int min)
-
 		{
-			// Autor: Janosh Björkman
+			Cosinus(AngleMeasure);
 		}
 		else if (SinCosTan == "Tangens")
 		{
-			
+			Tangens(AngleMeasure);
 		}
 		else if (SinCosTan == "arcSinus")
 		{
-			
+			arcSinus(AngleMeasure);
 		}
 		else if (SinCosTan == "arcCosinus")
 		{
-			
+			arcCosinus(AngleMeasure);
 		}
 		else if (SinCosTan == "arcTangens")
 		{
-			
+			arcTangens(AngleMeasure);
 		}
 	}
 	
@@ -112,21 +113,8 @@ public class Berechnungen {
 	{
 		Math.atan(Tangens);
 	}
-	
-	public void Zufallszahl()
-	{
-		
-	}
-
-			Random rand = new Random();
-			int randomNum = min + (int)(Math.random() * ((max - min) + 1));
-			System.out.println("Zufallszahl: "+randomNum);
-		}
-<<<<<<< HEAD
 
 
-	}
-=======
 }
->>>>>>> origin/master
+
 
