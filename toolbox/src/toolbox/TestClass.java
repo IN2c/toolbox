@@ -55,7 +55,6 @@ public class TestClass {
 
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
 
-		Berechnungen.Tangens(32);
 		
 		Berechnungen phWert = new Berechnungen();
 		phWert.phWert(0.2);
