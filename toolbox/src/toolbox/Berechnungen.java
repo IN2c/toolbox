@@ -1,6 +1,7 @@
 package toolbox;
 
 import java.lang.Math.*;
+import java.math.BigDecimal;
 import java.util.Random;
 
 public class Berechnungen {
@@ -42,9 +43,12 @@ public class Berechnungen {
 			System.out.println("Die Gegenkathete ist: " + gegenkathete);
 		}
 		
-		public void phWert()
-		{
-			
+		public void phWert(double stoffmengenkonzentration) {
+			double phWert;
+			double stoff;
+			stoff = stoffmengenkonzentration;
+			phWert = (-1 * Math.log10(stoff));
+			System.out.println (roundAndFormat(phWert, 3));
 		}		
 		
 		public void Zufallszahl(int max, int min)
@@ -55,6 +59,12 @@ public class Berechnungen {
 			int randomNum = min + (int)(Math.random() * ((max - min) + 1));
 			System.out.println("Zufallszahl: "+randomNum);
 		}
+		
+		public String roundAndFormat(final double value, final int frac) { 
+	        final java.text.NumberFormat nf = java.text.NumberFormat.getInstance(); 
+	        nf.setMaximumFractionDigits(frac); 
+	        return nf.format(new BigDecimal(value)); 
+	    }
 
 	public void SinusCosinusTangens(String SinCosTan, String AngleMeasure, double value)
 	{
