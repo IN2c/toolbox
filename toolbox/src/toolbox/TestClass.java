@@ -25,10 +25,10 @@ public class TestClass {
 		Berechnungen Berechnungen = new Berechnungen();
 		Berechnungen.Zufallszahl(15000, 0);
 		
-		Berechnungen.Sinus(90);
+		Berechnungen.SinusCosinusTangens("Sinus", "Grad", 90);
 		
-		Berechnungen.Cosinus(30);
+		Berechnungen.SinusCosinusTangens("Sinus", "Rad", 90);
 		
-		Berechnungen.Tangens(32);
+		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
 	}
 }
