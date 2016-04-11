@@ -1,5 +1,7 @@
 package toolbox;
 
+import java.lang.Math.*;
+
 public class Berechnungen {
 		
 		public void Pythagoras(double ankathete, double gegenkathete, double hypothenuse) {
@@ -44,13 +46,67 @@ public class Berechnungen {
 			
 		}
 	
-	public void SinusCosinusTangens()
+	public void SinusCosinusTangens(String SinCosTan, String AngleMeasure)
 	{
-		
-	}
-		public void Zufallszahl()
+		if (SinCosTan == "Sinus")
 		{
 			
 		}
+		else if (SinCosTan == "Cosinus")
+		{
+			
+		}
+		else if (SinCosTan == "Tangens")
+		{
+			
+		}
+		else if (SinCosTan == "arcSinus")
+		{
+			
+		}
+		else if (SinCosTan == "arcCosinus")
+		{
+			
+		}
+		else if (SinCosTan == "arcTangens")
+		{
+			
+		}
+	}
+	
+	public void Sinus(double angle)
+	{
+		Math.sin(angle);
+	}
+	
+	public void Cosinus(double angle)
+	{
+		Math.cos(angle);
+	}
+	
+	public void Tangens(double angle)
+	{
+		Math.tan(angle);
+	}
+	
+	public void arcSinus(double Sinus)
+	{
+		Math.asin(Sinus);
+	}
+	
+	public void arcCosinus(double Cosinus)
+	{
+		Math.acos(Cosinus);
+	}
+	
+	public void arcTangens(double Tangens)
+	{
+		Math.atan(Tangens);
+	}
+	
+	public void Zufallszahl()
+	{
+		
+	}
 
 	}
