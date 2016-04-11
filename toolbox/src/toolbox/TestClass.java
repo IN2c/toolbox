@@ -1,10 +1,29 @@
+/*
+ *  doku by:	Janosh Björkman (TRUE PRO MLG JAVA-DEVELOPER) <- no scam
+ * 
+ *	project:	toolbox
+ * 
+ * 	usage:		(see comments in source-code)
+ * 
+ */
+
 package toolbox;
 
 public class TestClass {
-
+	
+	//	Im main werden alle Berechnungen und Umwandlungen initialisiert
+	//	ERKLÄRUNG:
+	//		UMWANDLUNG:
+	//			1. Erstellen Sie als erstes eine Instanz der Klasse Umwandlung
+	//			2. Rufen Sie mit der oben erstellten Instanz den gewünschten Vorgang auf (Parameter nicht vergessen).
+	//	
+	//		BERECHNUNG:
+	//			1. Erstelle Sie als erstes eine Instanz der Klasse Berechnungen
+	//			2. Rufen Sie mit der oben erstellten Instanz den gewünschten Vorgang auf (Parameter nicht vergessen).
+	
 	public static void main(String[] args) 
 	{
-
+		// 
 		Umwandlung Umwandlung = new Umwandlung();
 		Umwandlung.CelsiusInFahrenheit(32);
 		Umwandlung.CelsiusInFahrenheit(10);
