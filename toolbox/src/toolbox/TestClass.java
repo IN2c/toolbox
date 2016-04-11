@@ -25,9 +25,6 @@ public class TestClass {
 		Berechnungen zufallszahl1= new Berechnungen();
 		zufallszahl1.Zufallszahl(15000, 0);	
 		
-		Berechnungen phWert = new Berechnungen();
-		phWert.phWert(27.3);
-		
 		Berechnungen Berechnungen = new Berechnungen();
 		Berechnungen.Zufallszahl(15000, 0);
 		Berechnungen.Zufallszahl(15000, 0);
@@ -37,5 +34,8 @@ public class TestClass {
 		Berechnungen.Cosinus(30);
 		
 		Berechnungen.Tangens(32);
+		
+		Berechnungen phWert = new Berechnungen();
+		phWert.phWert(0.2);
 	}
 }
