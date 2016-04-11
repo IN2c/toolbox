@@ -23,6 +23,12 @@ public class TestClass {
 		auto.Berechnung();
 
 		Berechnungen Berechnungen = new Berechnungen();
-		Berechnungen.Zufallszahl(15000, 0);	
+		Berechnungen.Zufallszahl(15000, 0);
+		
+		Berechnungen.Sinus(90);
+		
+		Berechnungen.Cosinus(30);
+		
+		Berechnungen.Tangens(32);
 	}
 }

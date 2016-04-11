@@ -56,62 +56,72 @@ public class Berechnungen {
 			System.out.println("Zufallszahl: "+randomNum);
 		}
 
-	public void SinusCosinusTangens(String SinCosTan, double AngleMeasure)
+	public void SinusCosinusTangens(String SinCosTan, String AngleMeasure, double value)
 	{
 		if (SinCosTan == "Sinus")
 		{
-			Sinus(AngleMeasure);
+			Sinus(value);
 		}
 		else if (SinCosTan == "Cosinus")
 		{
-			Cosinus(AngleMeasure);
+			Cosinus(value);
 		}
 		else if (SinCosTan == "Tangens")
 		{
-			Tangens(AngleMeasure);
+			Tangens(value);
 		}
 		else if (SinCosTan == "arcSinus")
 		{
-			arcSinus(AngleMeasure);
+			arcSinus(value);
 		}
 		else if (SinCosTan == "arcCosinus")
 		{
-			arcCosinus(AngleMeasure);
+			arcCosinus(value);
 		}
 		else if (SinCosTan == "arcTangens")
 		{
-			arcTangens(AngleMeasure);
+			arcTangens(value);
+		}
+		else
+		{
+			System.out.printf("\nKeine gültige Eingabe für die Funktion! Bitte geben sie eine gültige Funktion an!");
 		}
 	}
 	
 	public void Sinus(double angle)
 	{
-		Math.sin(angle);
+		double Resultat = Math.sin(angle);
+		System.out.printf("\nDer Sinus von %4.2f° beträgt %4.2f\n\n\n", angle, Resultat);
 	}
 	
 	public void Cosinus(double angle)
 	{
-		Math.cos(angle);
+		double Resultat = Math.cos(angle);
+		System.out.printf("\nDer Cosinus von %4.2f° beträgt %4.2f\n\n\n", angle, Resultat);
 	}
 	
 	public void Tangens(double angle)
 	{
-		Math.tan(angle);
+		double Resultat = Math.tan(angle);
+		System.out.printf("\nDer Tangens von %4.2f° beträgt %4.2f\n\n\n", angle, Resultat);
 	}
 	
 	public void arcSinus(double Sinus)
 	{
-		Math.asin(Sinus);
+		double Resultat = Math.asin(Sinus);
+		System.out.printf("\nDer arcSinus von %4.2f beträgt %4.2f\n\n\n", Sinus, Resultat);
 	}
 	
 	public void arcCosinus(double Cosinus)
 	{
-		Math.acos(Cosinus);
+		double Resultat = Math.acos(Cosinus);
+		System.out.printf("\nDer arcCosinus von %4.2f beträgt %4.2f\n\n\n", Cosinus, Resultat);
 	}
 	
 	public void arcTangens(double Tangens)
 	{
-		Math.atan(Tangens);
+		double Resultat = Math.atan(Tangens);
+		System.out.printf("\nDer arcTangens von %4.2f beträgt %4.2f\n\n\n", Tangens, Resultat);
 	}
 
 
