@@ -1,7 +1,12 @@
 package toolbox;
+<<<<<<< HEAD
 
 //Berechnunsklasse für alle Umwandlungen
 public class Umwandlung 
+=======
+
+public class Umwandlung
+>>>>>>> 65777b8b9397c81697df68a648b78435df7086e6
 {
 	// Celsius zu Fahrenheit
 	// Wert in Celsius muss als Parameter übergeben werden
