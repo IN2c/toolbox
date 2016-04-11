@@ -122,7 +122,11 @@ public class Berechnungen {
 			int randomNum = min + (int)(Math.random() * ((max - min) + 1));
 			System.out.println("Zufallszahl: "+randomNum);
 		}
+<<<<<<< HEAD
 
 
 	}
+=======
+}
+>>>>>>> origin/master
 
