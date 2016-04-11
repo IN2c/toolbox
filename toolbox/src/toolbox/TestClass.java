@@ -19,23 +19,27 @@ public class TestClass {
 		Umwandlung gbtomb = new Umwandlung();
 		gbtomb.GBinMB(125.3);
 		
-		AutopreisBerechnen auto = new AutopreisBerechnen(8000.0, 4, 333, 4000.0);
+		AutopreisBerechnen auto = new AutopreisBerechnen(8000.0, 3, 333, 4000.0);
 		auto.Berechnung();
 
 		Berechnungen zufallszahl1= new Berechnungen();
 		zufallszahl1.Zufallszahl(15000, 0);	
 		
-		Berechnungen phWert = new Berechnungen();
-		phWert.phWert(27.3);
-		
 		Berechnungen Berechnungen = new Berechnungen();
 		Berechnungen.Zufallszahl(15000, 0);
 		Berechnungen.Zufallszahl(15000, 0);
 		
-		Berechnungen.Sinus(90);
+		Berechnungen.SinusCosinusTangens("Sinus", "Grad", 90);
 		
-		Berechnungen.Cosinus(30);
+		Berechnungen.SinusCosinusTangens("Sinus", "Rad", 90);
 		
+<<<<<<< HEAD
+		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
+=======
 		Berechnungen.Tangens(32);
+		
+		Berechnungen phWert = new Berechnungen();
+		phWert.phWert(0.2);
+>>>>>>> origin/master
 	}
 }
