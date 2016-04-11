@@ -1,6 +1,7 @@
 package toolbox;
 
 import java.lang.Math.*;
+import java.util.Random;
 
 public class Berechnungen {
 		
@@ -44,8 +45,9 @@ public class Berechnungen {
 		public void phWert()
 		{
 			
-		}
+		}		
 	
+
 	public void SinusCosinusTangens(String SinCosTan, String AngleMeasure)
 	{
 		if (SinCosTan == "Sinus")
@@ -53,8 +55,15 @@ public class Berechnungen {
 			
 		}
 		else if (SinCosTan == "Cosinus")
+
+		public void SinusCosinusTangens(){
+		
+		}
+	
+		public void Zufallszahl(int max, int min)
+
 		{
-			
+			// Autor: Janosh Björkman
 		}
 		else if (SinCosTan == "Tangens")
 		{
@@ -109,4 +118,11 @@ public class Berechnungen {
 		
 	}
 
+			Random rand = new Random();
+			int randomNum = min + (int)(Math.random() * ((max - min) + 1));
+			System.out.println("Zufallszahl: "+randomNum);
+		}
+
+
 	}
+
