@@ -9,6 +9,7 @@ public class TestClass {
 		Umwandlung.CelsiusInFahrenheit(32);
 		Umwandlung.CelsiusInFahrenheit(10);
 		
+		System.out.println("Hier wird getestet, wie viele Franken die Angegebenen Euro sind. \nTest Werte: 12€ == 13.33CHF.");
 		Umwandlung Waehrung = new Umwandlung();
 		Waehrung.EuroInFranken(12.0);
 		
