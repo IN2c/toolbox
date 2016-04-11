@@ -20,5 +20,8 @@ public class TestClass {
 		
 		AutopreisBerechnen auto = new AutopreisBerechnen(8000.0, 3, 333, 4000.0);
 		auto.Berechnung();
+
+		Berechnungen zufallszahl1= new Berechnungen();
+		zufallszahl1.Zufallszahl(15000, 0);	
 	}
 }

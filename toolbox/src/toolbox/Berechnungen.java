@@ -1,5 +1,7 @@
 package toolbox;
 
+import java.util.Random;
+
 public class Berechnungen {
 		
 		public void Pythagoras(double ankathete, double gegenkathete, double hypothenuse) {
@@ -42,15 +44,20 @@ public class Berechnungen {
 		public void phWert()
 		{
 			
+		}		
+	
+		public void SinusCosinusTangens(){
+		
 		}
 	
-	public void SinusCosinusTangens()
-	{
-		
-	}
-		public void Zufallszahl()
+		public void Zufallszahl(int max, int min)
 		{
+			// Autor: Janosh Björkman
 			
+			Random rand = new Random();
+			int randomNum = min + (int)(Math.random() * ((max - min) + 1));
+			System.out.println("Zufallszahl: "+randomNum);
 		}
 
 	}
+
