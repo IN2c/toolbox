@@ -1,0 +1,108 @@
+﻿Merge remote-tracking branch 'origin/master'
+
+# Conflicts:
+#	toolbox/src/toolbox/Berechnungen.java
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 2 and 3 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   .metadata/.log
+#	modified:   .metadata/.mylyn/.tasks.xml.zip
+#	modified:   .metadata/.mylyn/tasks.xml.zip
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/0/a0a7cbfc77ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/1/206dc685b7ff001519b3f07254b1bc71
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/1c/80ebc0de77ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/1d/206aa50e72ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/29/606a1ef077ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/2a/a092902671ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/2f/8007827e6eef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/39/700a2b104bef00151f09f94f07e1b369
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/3c/d0952b1677ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/45/c018400178ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/46/70d09f2271ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/46/f0e44a3777ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/52/d0b415e071ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/60/80348f4f77ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/61/408369894aef00151f09f94f07e1b369
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/61/90aa403073ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/66/008187da4aef00151f09f94f07e1b369
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/79/f01ac11376ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/8/50a6bfd475ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/8c/40ea899976ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/92/80541dec77ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/b7/5001f63c77ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/c0/8033fabcb7ff001519b3f07254b1bc71
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/c9/90ef65cd75ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/ca/402f98d271ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/cc/b0b8cf8c4aef00151f09f94f07e1b369
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/cf/e065e93c71ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/d1/f0a11b8370ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/d5/20ce24da77ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/d6/e0d90eed4aef00151f09f94f07e1b369
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/dc/30f48c784aef00151f09f94f07e1b369
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/e/40afc9e971ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/e4/307b140b72ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/e8/c02d78ed70ef0015198ecf50464e109b
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/f3/7016103f71ef0015198ecf50464e109b
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/toolbox/.indexes/e4/cd/history.index
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.projects/toolbox/.markers
+#	deleted:    .metadata/.plugins/org.eclipse.core.resources/.projects/toolbox/.markers.snap
+#	deleted:    .metadata/.plugins/org.eclipse.core.resources/.projects/toolbox/.syncinfo.snap
+#	deleted:    .metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+#	deleted:    .metadata/.plugins/org.eclipse.core.resources/.root/1.tree
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.root/3.tree
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+#	deleted:    .metadata/.plugins/org.eclipse.core.resources/1.snap
+#	modified:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs
+#	new file:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.ui.prefs
+#	new file:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.epp.logging.aeri.ui.prefs
+#	new file:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.debug.ui.prefs
+#	modified:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs
+#	modified:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+#	new file:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.java.ui.prefs
+#	new file:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.views.log.prefs
+#	new file:   .metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml
+#	modified:   .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+#	new file:   .metadata/.plugins/org.eclipse.egit.ui/dialog_settings.xml
+#	modified:   .metadata/.plugins/org.eclipse.jdt.core/458508632.index
+#	modified:   .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+#	new file:   .metadata/.plugins/org.eclipse.jdt.debug.ui/dialog_settings.xml
+#	modified:   .metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml
+#	deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png
+#	deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png
+#	modified:   .metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
+#	new file:   .metadata/.plugins/org.eclipse.ui.editors/dialog_settings.xml
+#	new file:   .metadata/.plugins/org.eclipse.ui.views.log/dialog_settings.xml
+#	modified:   .metadata/version.ini
+#	new file:   .recommenders/caches/identified-project-coordinates.json
+#	new file:   .recommenders/caches/manual-mappings.json
+#	renamed:    .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.fdt -> .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_1.fdt
+#	renamed:    .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.fdx -> .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_1.fdx
+#	renamed:    .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.fnm -> .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_1.fnm
+#	renamed:    .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.frq -> .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_1.frq
+#	renamed:    .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.nrm -> .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_1.nrm
+#	renamed:    .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.prx -> .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_1.prx
+#	renamed:    .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.tii -> .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_1.tii
+#	renamed:    .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.tis -> .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_1.tis
+#	modified:   .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen
+#	deleted:    .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_1
+#	new file:   .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_2
+#	deleted:    .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/write.lock
+#	modified:   toolbox/src/toolbox/AutopreisBerechnen.java
+#	modified:   toolbox/src/toolbox/Berechnungen.java
+#	modified:   toolbox/src/toolbox/TestClass.java
+#
+
