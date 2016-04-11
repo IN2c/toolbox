@@ -52,22 +52,18 @@ public class TestClass {
 		
 		Berechnungen.SinusCosinusTangens("Sinus", "Rad", 90);
 		
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
-=======
+
 		Berechnungen.Tangens(32);
 		
 		Berechnungen phWert = new Berechnungen();
 		phWert.phWert(0.2);
->>>>>>> origin/master
-=======
 
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
 
 		
 		Berechnungen phWert = new Berechnungen();
 		phWert.phWert(0.2);
->>>>>>> f7859e04bdcb86ce7aa1639042abaf017a1e4541
 	}
 }
