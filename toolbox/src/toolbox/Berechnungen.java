@@ -48,7 +48,7 @@ public class Berechnungen {
 			double stoff;
 			stoff = stoffmengenkonzentration;
 			phWert = (-1 * Math.log10(stoff));
-			System.out.println (roundAndFormat(phWert, 3));
+			System.out.printf (roundAndFormat(phWert, 3) + "\n\n");
 		}		
 		
 		public void Zufallszahl(int max, int min)
