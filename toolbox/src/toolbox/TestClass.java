@@ -87,8 +87,8 @@ public class TestClass {
 		
 		Berechnungen mittelwert = new Berechnungen();
 		mittelwert.mittelwertRechnung(33);
-		mittelwert.mittelwertRechnung(1);
-		mittelwert.mittelwertRechnung(6);
+		mittelwert.mittelwertRechnung(9);
+		mittelwert.mittelwertRechnung(5);
 		
 		
 		// Punkt aus linearer Funktione mit 2 bekannten Punkten Berechnen
