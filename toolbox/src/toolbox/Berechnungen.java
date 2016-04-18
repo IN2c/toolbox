@@ -5,7 +5,6 @@ import java.math.BigDecimal;
 import java.util.Random;
 
 public class Berechnungen {
-		
 		public void Pythagoras(double ankathete, double gegenkathete, double hypothenuse) {
 			if(ankathete==0 && gegenkathete != 0 && hypothenuse != 0) {
 				ankathete(gegenkathete, hypothenuse);
@@ -201,6 +200,7 @@ public class Berechnungen {
 		
 	}
 	
+<<<<<<< HEAD
 	// y = a*x+b
 	public void lineareFunktion(double x1, double y1, double x2, double y2, double x3){
 		double deltaY = y2-y1;
@@ -211,6 +211,16 @@ public class Berechnungen {
 		System.out.printf("\nDer neue Punkt hat die Koordinaten (x/y) (%4.2f/%4.2f)\n", x3, y3);
 	}
 
+=======
+	public void mittelwert(double zahl) {}
+	
+	public String mittelwertRechnung(double zahl) {
+		double speicher = 0;
+		zahl = (zahl - speicher)/2;
+		speicher = zahl + speicher;
+		return "Der Mittelwert ist: " + speicher + "Schönen Tag noch!";
+	}
+>>>>>>> 2f79369355cc6bea8f30ac14edeb54c8a1923f55
 }
 
 

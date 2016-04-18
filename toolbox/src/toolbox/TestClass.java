@@ -9,6 +9,8 @@
 
 package toolbox;
 
+import java.io.IOException;
+
 public class TestClass {
 	
 	//	Im main werden alle Berechnungen und Umwandlungen initialisiert
@@ -21,8 +23,7 @@ public class TestClass {
 	//			1. Erstelle Sie als erstes eine Instanz der Klasse Berechnungen
 	//			2. Rufen Sie mit der oben erstellten Instanz den gewünschten Vorgang auf (Parameter nicht vergessen).
 	
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) {
 		// Celsius in Fahrenheit		Parameter: Zahl
 
 		Zeitmessung Zeitmessung = new Zeitmessung();
@@ -78,6 +79,11 @@ public class TestClass {
 		Berechnungen phWert = new Berechnungen();
 		phWert.phWert(0.2);
 
+		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
+
+		Berechnungen mittelwert = new Berechnungen();
+		mittelwert.mittelwertRechnung(33);
+		
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
 		
 		Zeitmessung.stopZeit();
