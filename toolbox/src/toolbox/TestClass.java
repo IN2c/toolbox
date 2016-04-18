@@ -54,6 +54,18 @@ public class TestClass {
 		
 
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
+		
+		Berechnungen hypothenuse = new Berechnungen();
+		hypothenuse.hypothenuse(15, 8);
+		Berechnungen ankathete = new Berechnungen();
+		ankathete.ankathete(8, 30);
+		Berechnungen gegenkathete = new Berechnungen();
+		gegenkathete.gegenkathete(15, 30);
+		
+		Berechnungen phWert = new Berechnungen();
+		phWert.phWert(0.2);
+
+		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
 
 		
 		Berechnungen phWert = new Berechnungen();

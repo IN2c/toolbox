@@ -48,7 +48,7 @@ public class Berechnungen {
 			double stoff;
 			stoff = stoffmengenkonzentration;
 			phWert = (-1 * Math.log10(stoff));
-			System.out.println (roundAndFormat(phWert, 3));
+			System.out.printf (roundAndFormat(phWert, 3) + "\n\n");
 		}		
 		
 		public void Zufallszahl(int max, int min)
@@ -122,7 +122,7 @@ public class Berechnungen {
 		}
 		else if (Mass == "Rad")
 		{
-			System.out.printf("\nDer Sinus von %4.2f° beträgt %4.2f\n\n\n", angle, Resultat);
+			System.out.printf("\nDer Sinus von %4.2f rad beträgt %4.2f\n\n\n", angle, Resultat);
 		}
 	}
 	
@@ -136,7 +136,7 @@ public class Berechnungen {
 		}
 		else if (Mass == "Rad")
 		{
-			System.out.printf("\nDer Cosinus von %4.2f° beträgt %4.2f\n\n\n", angle, Resultat);
+			System.out.printf("\nDer Cosinus von %4.2f rad beträgt %4.2f\n\n\n", angle, Resultat);
 		}
 		
 	}
@@ -151,7 +151,7 @@ public class Berechnungen {
 		}
 		else if (Mass == "Rad")
 		{
-			System.out.printf("\nDer Tangens von %4.2f° beträgt %4.2f\n\n\n", angle, Resultat);
+			System.out.printf("\nDer Tangens von %4.2f rad beträgt %4.2f\n\n\n", angle, Resultat);
 		}
 		
 	}
@@ -162,11 +162,11 @@ public class Berechnungen {
 		if (Mass == "Grad")
 		{
 			Sinus = ((360)/(2 * Math.PI))* Sinus;
-			System.out.printf("\nDer arcSinus von %4.2f beträgt %4.2f\n\n\n", Sinus, Resultat);
+			System.out.printf("\nDer arcSinus von %4.2f beträgt %4.2f°\n\n\n", Sinus, Resultat);
 		}
 		else if (Mass == "Rad")
 		{
-			System.out.printf("\nDer arcSinus von %4.2f beträgt %4.2f\n\n\n", Sinus, Resultat);	
+			System.out.printf("\nDer arcSinus von %4.2f beträgt %4.2f rad\n\n\n", Sinus, Resultat);	
 		}
 		
 	}
@@ -177,11 +177,11 @@ public class Berechnungen {
 		if (Mass == "Grad")
 		{
 			Cosinus = ((360)/(2 * Math.PI))* Cosinus;
-			System.out.printf("\nDer arcCosinus von %4.2f beträgt %4.2f\n\n\n", Cosinus, Resultat);
+			System.out.printf("\nDer arcCosinus von %4.2f beträgt %4.2f°\n\n\n", Cosinus, Resultat);
 		}
 		else if (Mass == "Rad")
 		{
-			System.out.printf("\nDer arcCosinus von %4.2f beträgt %4.2f\n\n\n", Cosinus, Resultat);
+			System.out.printf("\nDer arcCosinus von %4.2f beträgt %4.2f rad\n\n\n", Cosinus, Resultat);
 		}
 		
 	}
@@ -192,11 +192,11 @@ public class Berechnungen {
 		if (Mass == "Grad")
 		{
 			Tangens = ((360)/(2 * Math.PI))* Tangens;
-			System.out.printf("\nDer arcTangens von %4.2f beträgt %4.2f\n\n\n", Tangens, Resultat);
+			System.out.printf("\nDer arcTangens von %4.2f beträgt %4.2f°\n\n\n", Tangens, Resultat);
 		}
 		else if (Mass == "Rad")
 		{
-			System.out.printf("\nDer arcTangens von %4.2f beträgt %4.2f\n\n\n", Tangens, Resultat);
+			System.out.printf("\nDer arcTangens von %4.2f beträgt %4.2f rad\n\n\n", Tangens, Resultat);
 		}
 		
 	}
