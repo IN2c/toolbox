@@ -80,13 +80,14 @@ public class TestClass {
 		phWert.phWert(0.2);
 
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
-
-		Berechnungen mittelwert = new Berechnungen();
-		mittelwert.mittelwertRechnung(33);
 		
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
 		
 		Zeitmessung.stopZeit();
-
+		
+		Berechnungen mittelwert = new Berechnungen();
+		mittelwert.mittelwertRechnung(33);
+		mittelwert.mittelwertRechnung(1);
+		mittelwert.mittelwertRechnung(6);
 	}
 }

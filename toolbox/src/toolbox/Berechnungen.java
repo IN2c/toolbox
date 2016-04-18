@@ -5,6 +5,9 @@ import java.math.BigDecimal;
 import java.util.Random;
 
 public class Berechnungen {
+	double speicher = 0;
+	boolean mittelwertFirst = true;
+	
 		public void Pythagoras(double ankathete, double gegenkathete, double hypothenuse) {
 			if(ankathete==0 && gegenkathete != 0 && hypothenuse != 0) {
 				ankathete(gegenkathete, hypothenuse);
@@ -200,13 +203,17 @@ public class Berechnungen {
 		
 	}
 	
-	public void mittelwert(double zahl) {}
-	
-	public String mittelwertRechnung(double zahl) {
-		double speicher = 0;
-		zahl = (zahl - speicher)/2;
-		speicher = zahl + speicher;
-		return "Der Mittelwert ist: " + speicher + "Schönen Tag noch!";
+	public void mittelwertRechnung(double zahl) {
+		if (mittelwertFirst == true) {
+			System.out.println(zahl);
+			speicher = zahl;
+			mittelwertFirst = false;
+		}
+		else {
+			zahl = (zahl - speicher)/2;
+			speicher = zahl + speicher;
+			System.out.println("\nDer Mittelwert ist: " + speicher + " Schönen Tag noch!");
+		}
 	}
 }
 
