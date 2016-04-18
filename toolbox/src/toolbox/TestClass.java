@@ -1,5 +1,5 @@
 /*
- *  doku by:	Zepaschitan Schnittlauch
+ *  doku by:	Zepaschitan "THE REAPER OF YA MUM" Schnittlauch
  * 
  *	project:	toolbox
  * 
