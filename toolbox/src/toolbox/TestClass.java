@@ -10,7 +10,6 @@
 package toolbox;
 
 import java.io.IOException;
-import java.util.Scanner;
 
 public class TestClass {
 	
@@ -24,8 +23,6 @@ public class TestClass {
 	//			1. Erstelle Sie als erstes eine Instanz der Klasse Berechnungen
 	//			2. Rufen Sie mit der oben erstellten Instanz den gewünschten Vorgang auf (Parameter nicht vergessen).
 	
-	public static void main(String[] args {
-		Scanner in = new Scanner(System.in);
 	public static void main(String[] args) {
 		// Celsius in Fahrenheit		Parameter: Zahl
 
