@@ -1,5 +1,5 @@
 /*
- *  doku by:	Janosh Björkman (TRUE PRO MLG JAVA-DEVELOPER) <- no scam
+ *  doku by:	Zepaschitan Schnittlauch
  * 
  *	project:	toolbox
  * 
