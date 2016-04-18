@@ -1,5 +1,5 @@
 /*
- *  doku by:	Zepaschitan "THE REAPER OF YA MUM" Schnittlauch
+ *  doku by:	Lars der kleine Eisbär
  * 
  *	project:	toolbox
  * 
