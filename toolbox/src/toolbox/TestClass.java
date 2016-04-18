@@ -81,6 +81,9 @@ public class TestClass {
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
 		
 		Zeitmessung.stopZeit();
+		
+		// Punkt aus linearer Funktione mit 2 bekannten Punkten Berechnen
+		Berechnungen.lineareFunktion(6, 9, 10, 11, 69);
 
 	}
 }
