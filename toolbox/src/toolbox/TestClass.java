@@ -89,5 +89,9 @@ public class TestClass {
 		mittelwert.mittelwertRechnung(33);
 		mittelwert.mittelwertRechnung(1);
 		mittelwert.mittelwertRechnung(6);
+		
+		
+		// Punkt aus linearer Funktione mit 2 bekannten Punkten Berechnen
+		Berechnungen.lineareFunktion(6, 9, 10, 11, 69);
 	}
 }
