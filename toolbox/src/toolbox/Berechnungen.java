@@ -124,7 +124,6 @@ public class Berechnungen {
 		{
 			System.out.printf("\nDer Sinus von %4.2f° beträgt %4.2f\n\n\n", angle, Resultat);
 		}
-		
 	}
 	
 	public void Cosinus(double angle, String Mass)
