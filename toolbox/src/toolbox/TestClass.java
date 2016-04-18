@@ -23,6 +23,8 @@ public class TestClass {
 	
 	public static void main(String[] args) 
 	{
+		Zeitmessung Zeitmessung = new Zeitmessung();
+		Zeitmessung.startZeit();
 		// 
 		Umwandlung Umwandlung = new Umwandlung();
 		Umwandlung.CelsiusInFahrenheit(32);
@@ -52,7 +54,6 @@ public class TestClass {
 		
 		Berechnungen.SinusCosinusTangens("Sinus", "Rad", 90);
 		
-
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
 		
 		Berechnungen hypothenuse = new Berechnungen();
@@ -66,6 +67,8 @@ public class TestClass {
 		phWert.phWert(0.2);
 
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
+		
+		Zeitmessung.stopZeit();
 
 	}
 }
