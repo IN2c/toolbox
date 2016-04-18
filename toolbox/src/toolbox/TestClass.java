@@ -9,6 +9,9 @@
 
 package toolbox;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 public class TestClass {
 	
 	//	Im main werden alle Berechnungen und Umwandlungen initialisiert
@@ -21,8 +24,9 @@ public class TestClass {
 	//			1. Erstelle Sie als erstes eine Instanz der Klasse Berechnungen
 	//			2. Rufen Sie mit der oben erstellten Instanz den gewünschten Vorgang auf (Parameter nicht vergessen).
 	
-	public static void main(String[] args) 
+	public static void main(String[] args) throws IOException 
 	{
+		Scanner in = new Scanner(System.in);
 		// 
 		Umwandlung Umwandlung = new Umwandlung();
 		Umwandlung.CelsiusInFahrenheit(32);
@@ -67,5 +71,7 @@ public class TestClass {
 
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
 
+		Berechnungen mittelwert = new Berechnungen();
+		mittelwert.mittelwertRechnung(33);
 	}
 }
