@@ -1,5 +1,5 @@
 /*
- *  doku by:	Zepaschitan "THE REAPER OF YA MUM" Schnittlauch
+ *  doku by:	Lars der kleine Eisbär
  * 
  *	project:	toolbox
  * 
@@ -24,6 +24,11 @@ public class TestClass {
 	public static void main(String[] args) 
 	{
 		// Celsius in Fahrenheit		Parameter: Zahl
+
+		Zeitmessung Zeitmessung = new Zeitmessung();
+		Zeitmessung.startZeit();
+		// 
+
 		Umwandlung Umwandlung = new Umwandlung();
 		Umwandlung.CelsiusInFahrenheit(32);
 		Umwandlung.CelsiusInFahrenheit(10);
@@ -74,6 +79,8 @@ public class TestClass {
 		phWert.phWert(0.2);
 
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
+		
+		Zeitmessung.stopZeit();
 
 	}
 }
