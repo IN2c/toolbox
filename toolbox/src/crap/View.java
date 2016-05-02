@@ -38,8 +38,9 @@ private JFrame fenster;
         
         Container contentPane = fenster.getContentPane();
         
-        JLabel label = new JLabel("Ich bin ein Label. Ich kann Text anzeigen.");
-        contentPane.add(label);
+        JButton butcrap = new JButton("crapcrapcap");
+        contentPane.add(butcrap);
+        butcrap.addActionListener(e -> {fenster.dispose();});
 
         // Aufbau abgeschlossen - Komponenten arrangieren lassen
         fenster.pack();
