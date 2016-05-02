@@ -45,7 +45,7 @@ public class TestClass {
 		
 		// GB in MB					Parameter: Anzahl in GB
 		Umwandlung gbtomb = new Umwandlung();
-		gbtomb.GBinMB(125.3);
+		gbtomb.GBinMB(1);
 		
 		// Autopreis berechnen		Parameter: Neupreis, Alter in Jahre, PS, Kilometerstand
 		AutopreisBerechnen auto = new AutopreisBerechnen(8000.0, 3, 333, 4000.0);
@@ -53,7 +53,7 @@ public class TestClass {
 		
 		// Zufallszahl				Parameter: Obergrenze, Untergrenze
 		Berechnungen zufallszahl1= new Berechnungen();
-		zufallszahl1.Zufallszahl(15000, 0);	
+		zufallszahl1.Zufallszahl(15000, 14000);	
 		
 		Berechnungen Berechnungen = new Berechnungen();
 		Berechnungen.Zufallszahl(15000, 0);
@@ -92,6 +92,6 @@ public class TestClass {
 		
 		
 		// Punkt aus linearer Funktione mit 2 bekannten Punkten Berechnen
-		Berechnungen.lineareFunktion(6, 9, 10, 11, 69);
+		Berechnungen.lineareFunktion(1, 1, 2, 2, 0);
 	}
 }
