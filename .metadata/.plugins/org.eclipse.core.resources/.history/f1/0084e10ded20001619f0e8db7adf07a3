@@ -1,0 +1,39 @@
+package controller;
+import view.*;
+import model.*;
+import toolbox.AutopreisBerechnen;
+import toolbox.Umwandlung;
+
+public class Craptroller 
+{	
+	public Craptroller()
+	{
+		new View();
+		
+		Zeitmessung Zeitmessung = new Zeitmessung();
+		Zeitmessung.startZeit();
+		
+		Temperaturumwandlung GradUmwandlung = new Temperaturumwandlung();
+		GradUmwandlung.CelsiusInFahrenheit(32);
+		GradUmwandlung.FahrenheitInCelsius(10);
+		
+		System.out.println("Hier wird getestet, wie viele Franken die Angegebenen Euro sind. \nTest Werte: 12€ == 13.33CHF.");
+		EuroInFranken Waehrung = new EuroInFranken();
+		Waehrung.EuroInFranken(12.0);
+		
+		// MB in GB					Parameter: Anzahl MB
+		GroessenUmwandlung mbtogb = new GroessenUmwandlung();
+		mbtogb.MBinGB(690);
+		
+		// GB in MB					Parameter: Anzahl in GB
+		GroessenUmwandlung gbtomb = new GroessenUmwandlung();
+		gbtomb.GBinMB(1);
+		
+		AutopreisBerechnen auto = new AutopreisBerechnen(8000.0, 3, 333, 4000.0);
+		auto.Berechnung();
+		
+		
+		
+		Zeitmessung.stopZeit();
+	}
+}

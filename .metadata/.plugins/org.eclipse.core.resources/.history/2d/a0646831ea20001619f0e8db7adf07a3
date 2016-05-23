@@ -1,0 +1,24 @@
+package controller;
+import view.*;
+import model.*;
+
+public class Craptroller 
+{	
+	public Craptroller()
+	{
+		new View();
+		
+		Zeitmessung Zeitmessung = new Zeitmessung();
+		Zeitmessung.startZeit();
+		
+		Temperaturumwandlung GradUmwandlung = new Temperaturumwandlung();
+		GradUmwandlung.CelsiusInFahrenheit(32);
+		GradUmwandlung.FahrenheitInCelsius(10);
+		
+		System.out.println("Hier wird getestet, wie viele Franken die Angegebenen Euro sind. \nTest Werte: 12€ == 13.33CHF.");
+		Umwandlung Waehrung = new Umwandlung();
+		Waehrung.EuroInFranken(12.0);
+		
+		Zeitmessung.stopZeit();
+	}
+}

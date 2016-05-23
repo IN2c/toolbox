@@ -1,0 +1,12 @@
+package model;
+
+public class PHwert 
+{
+	public void phWert(double stoffmengenkonzentration) {
+		double phWert;
+		double stoff;
+		stoff = stoffmengenkonzentration;
+		phWert = (-1 * Math.log10(stoff));
+		System.out.printf (roundAndFormat(phWert, 3) + "\n\n");
+	}
+}

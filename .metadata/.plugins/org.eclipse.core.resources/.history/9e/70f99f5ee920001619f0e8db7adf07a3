@@ -1,0 +1,14 @@
+package controller;
+import view.*;
+import model.*;
+
+public class Craptroller 
+{	
+	public Craptroller()
+	{
+		new View();
+		
+		Zeitmessung Zeitmessung = new Zeitmessung();
+		Zeitmessung.startZeit();
+	}
+}

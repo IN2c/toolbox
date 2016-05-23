@@ -1,0 +1,20 @@
+package model;
+
+public class Pythagoras 
+{
+	public void Pythagorass(double ankathete, double gegenkathete, double hypothenuse) {
+		if(ankathete==0 && gegenkathete != 0 && hypothenuse != 0) {
+			ankathete(gegenkathete, hypothenuse);
+		}
+		else if ((gegenkathete == 0 && ankathete != 0 && hypothenuse != 0)) {
+			gegenkathete(ankathete, hypothenuse);
+		} 
+		else if ((hypothenuse == 0 && ankathete != 0 && gegenkathete != 0)){
+			hypothenuse(ankathete, gegenkathete);
+		}
+		else {
+			System.out.println("Bitte geben Sie Ihre Werte gemäss der Syntax an!");
+		}
+			
+	}
+}
