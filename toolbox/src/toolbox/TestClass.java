@@ -32,7 +32,7 @@ public class TestClass {
 
 		Umwandlung Umwandlung = new Umwandlung();
 		Umwandlung.CelsiusInFahrenheit(32);
-		Umwandlung.CelsiusInFahrenheit(10);
+		Umwandlung.FahrenheitInCelsius(10);
 		
 		// Euro in Franken			Parameter: Anzahl Euros
 		System.out.println("Hier wird getestet, wie viele Franken die Angegebenen Euro sind. \nTest Werte: 12€ == 13.33CHF.");
@@ -60,7 +60,7 @@ public class TestClass {
 		Berechnungen.Zufallszahl(15000, 0);
 		
 		// Sin, Cos, Tan			Parameter: Funktion(Sinus, Cosinus oder Tangens), Einheit(Rad oder Grad), Winkel
-		Berechnungen.SinusCosinusTangens("Sinus", "Grad", 90);
+		Berechnungen.SinusCosinusTangens("Sinus", "Grad", 30);
 		
 		Berechnungen.SinusCosinusTangens("Sinus", "Rad", 90);
 		

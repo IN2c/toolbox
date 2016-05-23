@@ -12,7 +12,7 @@ public class Zeitmessung {
 		System.out.println("Zeitmessung gestartet!");
 		Zeitstempel = Timestamp1;
 	}
-	
+		
 	public void stopZeit()
 	{
 		long Timestamp2;
