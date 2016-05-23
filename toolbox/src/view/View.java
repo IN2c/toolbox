@@ -1,5 +1,5 @@
-package crap;
-
+package view;
+import controller.*;
 import javax.swing.*;
 import java.awt.*;
 

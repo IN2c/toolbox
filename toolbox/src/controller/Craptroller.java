@@ -1,0 +1,10 @@
+package controller;
+import view.*;
+
+public class Craptroller 
+{	
+	public Craptroller()
+	{
+		new View();
+	}
+}
