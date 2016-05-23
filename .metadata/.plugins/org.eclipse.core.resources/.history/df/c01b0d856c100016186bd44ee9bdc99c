@@ -1,0 +1,38 @@
+package testpackage;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class View 
+{
+    private JFrame fenster;
+    
+	
+	View()
+	{
+		fensterErzeugen();
+	}
+	
+	public void fensterErzeugen()
+	{
+		fenster = new JFrame("Testproject MVC");
+        menuezeileErzeugen(fenster);
+        
+        JLabel label = new JLabel("TEST");
+        fenster.add(label);
+        Container contentPane = fenster.getContentPane();
+        
+        fenster.pack();
+        fenster.setVisible(true);
+        fenster.setDefaultCloseOperation(fenster.EXIT_ON_CLOSE);
+	}
+	
+	private void menuezeileErzeugen(JFrame fenster)
+    {        
+        JMenuBar menuezeile = new JMenuBar();
+        fenster.setJMenuBar(menuezeile);
+        
+        JMenu dateiMenue = new JMenu("Datei");
+        menuezeile.add(dateiMenue);
+    }
+}

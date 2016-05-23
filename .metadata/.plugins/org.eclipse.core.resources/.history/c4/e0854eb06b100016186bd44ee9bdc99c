@@ -1,0 +1,9 @@
+package testpackage;
+
+public class Maintestclass {
+
+	public static void main(String[] args) 
+	{
+		new Controller();
+	}
+}
