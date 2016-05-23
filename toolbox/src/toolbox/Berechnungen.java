@@ -57,7 +57,7 @@ public class Berechnungen {
 		{
 			// Autor: Janosh Björkman
 
-			Random rand = new Random();
+			//Random rand = new Random();
 			int randomNum = min + (int)(Math.random() * ((max - min) + 1));
 			System.out.println("Zufallszahl: "+randomNum);
 		}
@@ -226,5 +226,4 @@ public class Berechnungen {
 		System.out.printf("\nDer neue Punkt hat die Koordinaten (x/y) (%4.2f/%4.2f)\n", x3, y3);
 	}
 }
-
 

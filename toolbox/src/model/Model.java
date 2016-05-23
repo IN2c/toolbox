@@ -1,0 +1,8 @@
+package model;
+import controller.*;
+import view.*;
+
+public class Model 
+{
+	
+}

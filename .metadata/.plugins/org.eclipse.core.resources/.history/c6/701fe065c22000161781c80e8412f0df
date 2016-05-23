@@ -1,0 +1,11 @@
+package mainpackage;
+
+import controller.Controller;
+
+public class Maintestclass {
+
+	public static void main(String[] args) 
+	{
+		Controller test = new Controller();
+	}
+}

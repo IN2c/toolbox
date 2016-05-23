@@ -1,0 +1,9 @@
+package testpackage;
+
+public class Controller 
+{
+	Controller()
+	{
+		new View();
+	}
+}

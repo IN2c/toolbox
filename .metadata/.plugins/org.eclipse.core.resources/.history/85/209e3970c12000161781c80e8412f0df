@@ -1,0 +1,11 @@
+package testpackage;
+
+import testpackage.View;
+
+public class Controller 
+{
+	Controller()
+	{
+		new View();
+	}
+}

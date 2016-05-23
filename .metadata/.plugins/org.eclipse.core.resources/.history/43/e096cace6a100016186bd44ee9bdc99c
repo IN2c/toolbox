@@ -1,0 +1,58 @@
+package testpackage;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class View 
+{
+    private JFrame fenster;	
+	
+	public View()
+	{
+		fensterErzeugen();
+	}
+	
+	public void fensterErzeugen()
+	{
+		fenster = new JFrame("Bildbetachter");
+        menuezeileErzeugen(fenster);
+        
+        Container contentPane = fenster.getContentPane();
+        
+        fenster.pack();
+        fenster.setVisible(true);
+        fenster.setDefaultCloseOperation(fenster.EXIT_ON_CLOSE);
+	}
+	
+	private void menuezeileErzeugen(JFrame fenster)
+    {
+        final int SHORTCUT_MASK = Toolkit.getDefaultToolkit().getMenuShortcutKeyMask();
+        
+        JMenuBar menuezeile = new JMenuBar();
+        fenster.setJMenuBar(menuezeile);
+        
+        JMenu dateiMenue = new JMenu("Datei");
+        menuezeile.add(dateiMenue);
+        
+        JMenuItem oeffnenEintrag = new JMenuItem("Öffnen...");
+        oeffnenEintrag.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_0,SHORTCUT_MASK));
+        // oeffnenEintrag.addActionListener(e -> dateiOeffnen());
+        oeffnenEintrag.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e) {dateiOeffnen();}
+        });
+
+        dateiMenue.add(oeffnenEintrag);
+        
+        JMenuItem beendenEintrag = new JMenuItem("Beenden");
+        beendenEintrag.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Q, SHORTCUT_MASK));
+        beendenEintrag.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e) {beenden(); }
+        });
+        
+        dateiMenue.add(beendenEintrag);
+    }
+}
