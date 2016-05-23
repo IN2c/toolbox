@@ -41,8 +41,13 @@ private JFrame fenster;
         JButton butcrap = new JButton("crapcrapcap");
         contentPane.add(butcrap);
         butcrap.addActionListener(e -> {fenster.dispose();});
+        
+        JTextField tfName = new JTextField("", 15);
+        contentPane.add(tfName);
+        
 
         // Aufbau abgeschlossen - Komponenten arrangieren lassen
+        fenster.setSize(420, 420);
         fenster.pack();
         fenster.setVisible(true);
         fenster.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
