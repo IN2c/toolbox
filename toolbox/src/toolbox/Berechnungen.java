@@ -5,10 +5,10 @@ import java.math.BigDecimal;
 import java.util.Random;
 
 public class Berechnungen {
-	double speicher = 0;
+	/*double speicher = 0;
 	boolean mittelwertFirst = true;
 	
-		public void Pythagoras(double ankathete, double gegenkathete, double hypothenuse) {
+		/*public void Pythagoras(double ankathete, double gegenkathete, double hypothenuse) {
 			if(ankathete==0 && gegenkathete != 0 && hypothenuse != 0) {
 				ankathete(gegenkathete, hypothenuse);
 			}
@@ -224,6 +224,6 @@ public class Berechnungen {
 		double b = y1/(a*x3);
 		double y3 = a*x3+b;
 		System.out.printf("\nDer neue Punkt hat die Koordinaten (x/y) (%4.2f/%4.2f)\n", x3, y3);
-	}
+	}*/
 }
 

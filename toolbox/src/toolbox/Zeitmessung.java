@@ -1,7 +1,7 @@
 package toolbox;
 
 public class Zeitmessung {
-	
+	/*
 	public long Zeitstempel;
 	
 	public void startZeit()
@@ -22,5 +22,5 @@ public class Zeitmessung {
 		Timestamp2 = System.currentTimeMillis();
 		System.out.println("Die Ausführung hat " + ((Timestamp2-Timestamp1))+ " Millisekunden");
 	}
-	
+	*/
 }

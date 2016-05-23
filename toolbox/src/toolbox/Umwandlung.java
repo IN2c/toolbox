@@ -6,7 +6,7 @@ public class Umwandlung
 {
 	// Celsius zu Fahrenheit
 	// Wert in Celsius muss als Parameter übergeben werden
-	public void CelsiusInFahrenheit(double celsius)
+	/*public void CelsiusInFahrenheit(double celsius)
 	{
 		//Autor: Oliver Füllemann
 		double fahrenheit = 0;
@@ -24,6 +24,7 @@ public class Umwandlung
 		System.out.printf("%4.2f °F = %4.2f °C\n\n\n", fahrenheit, celsius);
 	}
 	
+	
 	// GB in MB
 	// Wert in GB muss zur Umwandlung als Parameter mitgegeben werden
 	public void GBinMB(double wert)
@@ -31,9 +32,9 @@ public class Umwandlung
 		double mb = wert*1024;
 		System.out.printf("\n%4.2f GB entsprechen %4.2f MB\n\n\n", wert, mb);
 	}
-	
+	*/
 	// Euro in Franken
-	// Wert in Euro muss als Parameter übergeben werden
+	/*// Wert in Euro muss als Parameter übergeben werden
 	public void EuroInFranken(double wert)
 	{
 		// Autor: Tobias Verstappen
@@ -52,4 +53,5 @@ public class Umwandlung
 		double gb = wert/1024;
 		System.out.printf("\n%4.2f MB entsprechen %4.2f GB\n\n\n", wert, gb);
 	}
+	*/
 }

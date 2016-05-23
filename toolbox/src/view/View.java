@@ -3,7 +3,8 @@ import controller.*;
 import javax.swing.*;
 import java.awt.*;
 
-public class View {
+public class View 
+{
 	
 private JFrame fenster;
 

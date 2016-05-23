@@ -25,11 +25,11 @@ public class TestClass {
 	
 	public static void main(String[] args) {
 		// Celsius in Fahrenheit		Parameter: Zahl
-
+		/*
 		Zeitmessung Zeitmessung = new Zeitmessung();
 		Zeitmessung.startZeit();
 		// 
-
+		 
 		Umwandlung Umwandlung = new Umwandlung();
 		Umwandlung.CelsiusInFahrenheit(32);
 		Umwandlung.FahrenheitInCelsius(10);
@@ -82,8 +82,9 @@ public class TestClass {
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
 		
 		Berechnungen.SinusCosinusTangens("Cosinus", "Grad", 90);
-		
+		/*
 		Zeitmessung.stopZeit();
+		
 		
 		Berechnungen mittelwert = new Berechnungen();
 		mittelwert.mittelwertRechnung(33);
@@ -93,5 +94,6 @@ public class TestClass {
 		
 		// Punkt aus linearer Funktione mit 2 bekannten Punkten Berechnen
 		Berechnungen.lineareFunktion(1, 1, 2, 2, 0);
+		*/
 	}
 }
