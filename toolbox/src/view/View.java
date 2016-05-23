@@ -5,8 +5,7 @@ import java.awt.*;
 
 public class View 
 {
-	
-private JFrame fenster;
+	private JFrame fenster;
 
     public View()
     {

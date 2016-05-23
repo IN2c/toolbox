@@ -5,7 +5,8 @@ import java.awt.*;
 
 public class Craptroller 
 {	
-	private View viewName;
+	private Model model;
+	private View view;
 	
 	public Craptroller()
 	{
