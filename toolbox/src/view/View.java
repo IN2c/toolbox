@@ -38,19 +38,25 @@ public class View
         
         Container contentPane = fenster.getContentPane();
         
-        JButton butcrap = new JButton("crapcrapcap");
-        contentPane.add(butcrap);
-        butcrap.addActionListener(e -> {fenster.dispose();});
-        
-        JTextField tfName = new JTextField("", 15);
-        contentPane.add(tfName);
-        
+        JButton celsuisFahrenheit = new JButton("Celsius - Fahremheit");
+        contentPane.add(celsuisFahrenheit);
+        celsuisFahrenheit.addActionListener(e -> {fenster.dispose();});
+        JButton autopreis = new JButton("Autopreis");
+        contentPane.add(autopreis);
+        autopreis.addActionListener(e -> {fenster.dispose();}); 
 
-        // Aufbau abgeschlossen - Komponenten arrangieren lassen
-        fenster.setSize(420, 420);
-        fenster.pack();
-        fenster.setVisible(true);
+        // Aufbau abgeschlossen - Komponenten arrangieren lassen        
         fenster.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        fenster.setLayout(new GridLayout(5, 2));
+        fenster.setLocationRelativeTo(null);
+        fenster.setPreferredSize(new Dimension(600, 600));
+        fenster.pack();
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        Point middle = new Point(screenSize.width / 2, screenSize.height / 2);
+        Point newLocation = new Point(middle.x - (fenster.getWidth() / 2), 
+                                      middle.y - (fenster.getHeight() / 2));
+        fenster.setLocation(newLocation);
+        fenster.setVisible(true);
     }
     
     private void menuezeileErzeugen(JFrame fenster)
