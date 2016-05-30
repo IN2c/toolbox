@@ -1,6 +1,7 @@
 package view;
 
 import java.awt.Container;
+import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.FlowLayout;
 import java.awt.Graphics;
@@ -8,7 +9,6 @@ import java.awt.GridLayout;
 import java.awt.event.*;
 import java.awt.image.*;
 import javax.swing.*;
-import javax.swing.ButtonGroup;
 
 public class SinCosTanView 
 {
@@ -24,10 +24,9 @@ public class SinCosTanView
         fenster = new JFrame("SinCosTan");
         menuezeileErzeugen(fenster);
         RadioButtons(fenster);
-        fenster.setDefaultCloseOperation(fenster.DISPOSE_ON_CLOSE);
+        rest(fenster);
+        fenster.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         
-        Container contentPane = fenster.getContentPane();
-
         // Aufbau abgeschlossen - Komponenten arrangieren lassen
         //fenster.setSize(500, 500);
         fenster.pack();
@@ -73,6 +72,20 @@ public class SinCosTanView
 		fenster.dispose();
 	}
 	
+	public void rest(JFrame fenster)
+	{
+		JLabel wert = new JLabel("Wert: ");
+		fenster.add(wert);
+		
+		JLabel result = new JLabel("Resultat: ");
+		fenster.add(result);
+		
+		JPanel north = new JPanel();
+	    north.add(wert);
+	    north.add(result);
+	    fenster.add(north, BorderLayout.SOUTH);
+	}
+	
 	public void RadioButtons(JFrame fenster)
 	{
 		
@@ -111,7 +124,31 @@ public class SinCosTanView
 	    arctan.setMnemonic(KeyEvent.VK_D);
 	    arctan.setActionCommand("ArcTan");
 	    arctan.setSelected(false);
+	    
+	    JRadioButton deg = new JRadioButton("DEG");
+	    deg.setMnemonic(KeyEvent.VK_C);
+	    deg.setActionCommand("DEG");
+	    deg.setSelected(true);
 
+	    JRadioButton rad = new JRadioButton("RAD");
+	    rad.setMnemonic(KeyEvent.VK_D);
+	    rad.setActionCommand("RAD");
+	    rad.setSelected(false);
+
+	    JPanel north1 = new JPanel();
+	    north1.add(deg);
+	    north1.add(rad);
+	    fenster.add(north1, BorderLayout.NORTH);
+	    
+	    JPanel center = new JPanel();
+	    center.add(deg);
+	    center.add(rad);
+	    center.add(sin);
+	    center.add(arcsin);
+	    center.add(arccos);
+	    center.add(arctan);
+	    fenster.add(center, BorderLayout.CENTER);
+	    
 	    //Group the radio buttons.
 	    Group.add(arcsin);
 	    Group.add(arccos);
@@ -121,16 +158,19 @@ public class SinCosTanView
 	    fenster.add(cos);
 	    fenster.add(tan);
 	    
-	    //paint();
+	    //linie
 	    
 	    fenster.add(arcsin);
 	    fenster.add(arccos);
 	    fenster.add(arctan);
 	    
-	    fenster.setLayout( new GridLayout(2,3));
+	    //linie
+	    
+	    ButtonGroup Group1 = new ButtonGroup();
+	    Group1.add(deg);
+	    Group1.add(rad);
+	    
+	    fenster.setLayout( new GridLayout(4,3));
 	    fenster.setVisible(true);
-	}
-	public void paint(Graphics g){
- 	   g.drawLine(0, 0, 100, 100);
 	}
 }
