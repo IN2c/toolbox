@@ -36,18 +36,34 @@ public class View
         fenster = new JFrame("Bildbetrachter");
         menuezeileErzeugen(fenster);
         
-        Container contentPane = fenster.getContentPane();
+        Container contentpane = fenster.getContentPane();
+        contentpane.setLayout(new GridLayout(4, 2));
         
-        JButton celsuisFahrenheit = new JButton("Celsius - Fahremheit");
-        contentPane.add(celsuisFahrenheit);
-        celsuisFahrenheit.addActionListener(e -> {fenster.dispose();});
-        JButton autopreis = new JButton("Autopreis");
-        contentPane.add(autopreis);
-        autopreis.addActionListener(e -> {fenster.dispose();}); 
+        JButton button = new JButton("Celsius - Fahremheit");
+        button.addActionListener(e -> {fenster.dispose();});
+        contentpane.add(button);
+        
+        button = new JButton("Autopreis");
+        button.addActionListener(e -> {fenster.dispose();});
+        contentpane.add(button);
+        
+        button = new JButton("CHF - Euro");
+        contentpane.add(button);
+        
+        button = new JButton("Zufallszahl");
+        button.setFont(new Font("Terminal", Font.BOLD, 20));
+        contentpane.add(button);
+        
+        button = new JButton("MG - GB");
+        button.setFont(new Font("Terminal", Font.BOLD, 20));
+        contentpane.add(button);
+        
+        contentpane.add(button);
+        button = new JButton("There");
+        contentpane.add(button);
 
-        // Aufbau abgeschlossen - Komponenten arrangieren lassen        
+        // Windowlocation       
         fenster.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        fenster.setLayout(new GridLayout(5, 2));
         fenster.setLocationRelativeTo(null);
         fenster.setPreferredSize(new Dimension(600, 600));
         fenster.pack();
