@@ -33,34 +33,45 @@ public class View
     
     private void fensterErzeugen()
     {
-        fenster = new JFrame("Bildbetrachter");
+        fenster = new JFrame("Hauptmenü");
         menuezeileErzeugen(fenster);
         
-        Container contentpane = fenster.getContentPane();
-        contentpane.setLayout(new GridLayout(4, 2));
+        JPanel mainpanel = new JPanel();
+        mainpanel.setLayout(new BoxLayout(mainpanel, BoxLayout.X_AXIS));
+
+        JPanel panel1 = new JPanel();
+        JPanel panel2 = new JPanel();
         
+        mainpanel.add(panel1);
+        mainpanel.add(panel2);
+        
+        // panel1
         JButton button = new JButton("Celsius - Fahremheit");
+        button.setFont(new Font("Terminal", Font.BOLD, 20));
         button.addActionListener(e -> {fenster.dispose();});
-        contentpane.add(button);
-        
-        button = new JButton("Autopreis");
-        button.addActionListener(e -> {fenster.dispose();});
-        contentpane.add(button);
+        panel1.add(button);
         
         button = new JButton("CHF - Euro");
-        contentpane.add(button);
+        button.setFont(new Font("Terminal", Font.BOLD, 20));
+        panel1.add(button);
+        
+        button = new JButton("MB - GB");
+        button.setFont(new Font("Terminal", Font.BOLD, 20));
+        panel1.add(button);
+        
+        // panel2
+        button = new JButton("Autopreis");
+        button.setFont(new Font("Terminal", Font.BOLD, 20));
+        button.addActionListener(e -> {fenster.dispose();});
+        panel2.add(button);
         
         button = new JButton("Zufallszahl");
         button.setFont(new Font("Terminal", Font.BOLD, 20));
-        contentpane.add(button);
+        panel2.add(button);
         
-        button = new JButton("MG - GB");
+        button = new JButton("Sin,Cos,Tan");
         button.setFont(new Font("Terminal", Font.BOLD, 20));
-        contentpane.add(button);
-        
-        contentpane.add(button);
-        button = new JButton("There");
-        contentpane.add(button);
+        panel2.add(button);
 
         // Windowlocation       
         fenster.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
