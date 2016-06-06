@@ -1,6 +1,9 @@
 package view;
 import controller.*;
 import javax.swing.*;
+
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 import java.awt.*;
 
 public class View 
@@ -26,7 +29,7 @@ public class View
     
     public void dateiBeenden()
     {
-        fenster.dispose();
+    	System.exit(0);
     }
             
     // ---- Swing-Anteil zum Erzeugen des Fensters mit allen Komponenten ----
@@ -44,6 +47,7 @@ public class View
         JPanel panel2 = new JPanel();
         panel2.setLayout(new BoxLayout(panel2, BoxLayout.PAGE_AXIS));
         
+        mainpanel.add(Box.createRigidArea(new Dimension(10,0)));
         mainpanel.add(panel1);
         mainpanel.add(Box.createRigidArea(new Dimension(100,0)));
         mainpanel.add(panel2);
@@ -77,17 +81,18 @@ public class View
         button = new JButton("Sin,Cos,Tan");
         button.setFont(new Font("Terminal", Font.BOLD, 20));
         panel2.add(button);
-
+       
         // Windowlocation       
         fenster.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         fenster.setLocationRelativeTo(null);
-        fenster.setPreferredSize(new Dimension(600, 600));
+        fenster.setPreferredSize(new Dimension(500, 500));
         fenster.pack();
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         Point middle = new Point(screenSize.width / 2, screenSize.height / 2);
         Point newLocation = new Point(middle.x - (fenster.getWidth() / 2), 
                                       middle.y - (fenster.getHeight() / 2));
         fenster.setLocation(newLocation);
+        fenster.setResizable(false);
         fenster.setVisible(true);
     }
     
