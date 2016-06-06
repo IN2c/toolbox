@@ -33,17 +33,22 @@ public class View
     
     private void fensterErzeugen()
     {
-        fenster = new JFrame("Hauptmenü");
+    	JFrame fenster = new JFrame("Hauptmenü");
         menuezeileErzeugen(fenster);
         
         JPanel mainpanel = new JPanel();
         mainpanel.setLayout(new BoxLayout(mainpanel, BoxLayout.X_AXIS));
 
         JPanel panel1 = new JPanel();
+        panel1.setLayout(new BoxLayout(panel1, BoxLayout.PAGE_AXIS));
         JPanel panel2 = new JPanel();
+        panel2.setLayout(new BoxLayout(panel2, BoxLayout.PAGE_AXIS));
         
         mainpanel.add(panel1);
+        mainpanel.add(Box.createRigidArea(new Dimension(100,0)));
         mainpanel.add(panel2);
+        
+        fenster.add(mainpanel);
         
         // panel1
         JButton button = new JButton("Celsius - Fahremheit");
