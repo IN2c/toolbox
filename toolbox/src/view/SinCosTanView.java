@@ -28,8 +28,8 @@ public class SinCosTanView
         fenster.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         
         // Aufbau abgeschlossen - Komponenten arrangieren lassen
-        //fenster.setSize(500, 500);
-        fenster.pack();
+        fenster.setSize(600, 400);
+        //fenster.pack();
         fenster.setVisible(true);
     }
 	
@@ -77,12 +77,22 @@ public class SinCosTanView
 		JLabel wert = new JLabel("Wert: ");
 		fenster.add(wert);
 		
+		
+		
 		JLabel result = new JLabel("Resultat: ");
 		fenster.add(result);
 		
 		JPanel north = new JPanel();
 	    north.add(wert);
+	    JTextArea textArea = new JTextArea(4, 10);
+	    JScrollPane scrollPane = new JScrollPane(textArea);
+		north.add(scrollPane);
+	    
 	    north.add(result);
+	    
+	    JTextArea textArea1 = new JTextArea(4, 10);
+	    JScrollPane scrollPane1 = new JScrollPane(textArea1);
+		north.add(scrollPane1);
 	    fenster.add(north, BorderLayout.SOUTH);
 	}
 	
@@ -140,20 +150,13 @@ public class SinCosTanView
 	    north1.add(rad);
 	    fenster.add(north1, BorderLayout.NORTH);
 	    
-	    JPanel center = new JPanel();
-	    center.add(deg);
-	    center.add(rad);
-	    center.add(sin);
-	    center.add(arcsin);
-	    center.add(arccos);
-	    center.add(arctan);
-	    fenster.add(center, BorderLayout.CENTER);
+	    
 	    
 	    //Group the radio buttons.
 	    Group.add(arcsin);
 	    Group.add(arccos);
 	    Group.add(arctan);
-	    
+	    /*
 	    fenster.add(sin);
 	    fenster.add(cos);
 	    fenster.add(tan);
@@ -163,14 +166,23 @@ public class SinCosTanView
 	    fenster.add(arcsin);
 	    fenster.add(arccos);
 	    fenster.add(arctan);
-	    
+	    */
 	    //linie
+	    JPanel center = new JPanel();
+	    center.add(sin);
+	    center.add(cos);
+	    center.add(tan);
+	    center.add(arcsin);
+	    center.add(arccos);
+	    center.add(arctan);
+	    fenster.add(center, BorderLayout.BEFORE_LINE_BEGINS);
+	    center.setLayout(new GridLayout(2,3));
 	    
 	    ButtonGroup Group1 = new ButtonGroup();
 	    Group1.add(deg);
 	    Group1.add(rad);
 	    
-	    fenster.setLayout( new GridLayout(4,3));
+	    fenster.setResizable(false);
 	    fenster.setVisible(true);
 	}
 }
