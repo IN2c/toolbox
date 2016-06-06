@@ -1,4 +1,5 @@
 package view;
+import controller.Zufallszahlen;
 
 import java.awt.Container;
 import java.awt.BorderLayout;
@@ -7,11 +8,13 @@ import java.awt.FlowLayout;
 import java.awt.Graphics;
 import java.awt.GridLayout;
 import java.awt.event.*;
-import java.awt.image.*;
+import java.awt.image.*;	
 import javax.swing.*;
 
-public class SinCosTanView 
+public class SinCosTanView
 {
+	String resultat = "chäääs";
+	
 	private JFrame fenster;
 	
 	public SinCosTanView()
@@ -91,9 +94,15 @@ public class SinCosTanView
 	    north.add(result);
 	    
 	    JTextArea textArea1 = new JTextArea(4, 10);
+	    textArea1.setText(resultat);
+	    
 	    JScrollPane scrollPane1 = new JScrollPane(textArea1);
 		north.add(scrollPane1);
 	    fenster.add(north, BorderLayout.SOUTH);
+	    
+	    // Buttons müssen noch geLLayoutet werden
+	    //JButton schliessen = new JButton("Schliessen");
+		//fenster.add(schliessen, BorderLayout.NORTH);
 	}
 	
 	public void RadioButtons(JFrame fenster)
@@ -150,23 +159,11 @@ public class SinCosTanView
 	    north1.add(rad);
 	    fenster.add(north1, BorderLayout.NORTH);
 	    
-	    
-	    
 	    //Group the radio buttons.
 	    Group.add(arcsin);
 	    Group.add(arccos);
 	    Group.add(arctan);
-	    /*
-	    fenster.add(sin);
-	    fenster.add(cos);
-	    fenster.add(tan);
-	    
-	    //linie
-	    
-	    fenster.add(arcsin);
-	    fenster.add(arccos);
-	    fenster.add(arctan);
-	    */
+
 	    //linie
 	    JPanel center = new JPanel();
 	    center.add(sin);

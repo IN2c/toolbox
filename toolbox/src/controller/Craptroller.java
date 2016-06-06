@@ -11,6 +11,7 @@ public class Craptroller
 	public Craptroller()
 	{
 		new View();
+		new SinCosTanView();
 		
 		Zeitmessung Zeitmessung = new Zeitmessung();
 		Zeitmessung.startZeit();
